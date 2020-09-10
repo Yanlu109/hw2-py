@@ -73,7 +73,8 @@ def run():
   credit3 = input("Enter your course 3 credit: ")
   print(f"Grade point for course 3 is: {getGradePoint(grade3)}")
   
-  gpa = float((int(credit1) * grade1 + int(credit2) * grade2 + int(credit3) * grade3)/(int(credit1) + int(credit2) + int(credit3)))
+  gpa = float((int(credit1)* {getGradePoint(grade1)} + int(credit2) * {getGradePoint(grade2)} + int(credit3) * {getGradePoint(grade3)})/(int(credit1) + int(credit2) + int(credit3)))
+  
   print(f"Your GPA is: {gpa}")
 
 if __name__=="__main__":
