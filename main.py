@@ -1,7 +1,5 @@
 #Author: Yan Lu yfl5541@psu.edu
-
 def getGradePoint(grade1):
-
   if grade1 == "A":
     gp1 = 4.0
   elif grade1 == "A-":
@@ -72,10 +70,13 @@ def run():
   grade3 = input("Enter your course 3 letter grade: ")
   credit3 = input("Enter your course 3 credit: ")
   print(f"Grade point for course 3 is: {getGradePoint(grade3)}")
-  
-  gpa = float((int(credit1)* {getGradePoint(grade1)} + int(credit2) * {getGradePoint(grade2)} + int(credit3) * {getGradePoint(grade3)})/(int(credit1) + int(credit2) + int(credit3)))
-  
+
+  gpa = float((int(credit1)* getGradePoint(grade1) + int(credit2) * getGradePoint(grade2) + int(credit3) * getGradePoint(grade3))/(int(credit1) + int(credit2) + int(credit3)))
+
   print(f"Your GPA is: {gpa}")
+  
 
 if __name__=="__main__":
   run()
+
+ 
